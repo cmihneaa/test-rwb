@@ -9,42 +9,42 @@ let app = {
         round: "Kampagne",
         button: "Jke Design - Stensballe",
         newPrice: "16.495 DKK",
-        avatar: "./image/abc.jpg",
+        avatar: "../assets/img/foto.png",
         oldPrice: "21.595 KR",
       },
       {
         round: "Demo Pris",
         button: "Hb4 Taglejlighed",
         newPrice: "36.495 DKK",
-        avatar: "",
+        avatar: "../assets/img/foto2.png",
         oldPrice: "41.995 KR",
       },
       {
         round: "Nyhed",
         button: "Multiform, mettes kokken",
         newPrice: "116.495 DKK",
-        avatar: "",
+        avatar: "../assets/img/foto3.png",
         oldPrice: "121.795 KR",
       },
       {
         round: "Kampagne",
         button: "Jke Design - Stensballe",
         newPrice: "16.495 DKK",
-        avatar: "",
+        avatar: "../assets/img/foto.png",
         oldPrice: "21.595 KR",
       },
       {
         round: "Demo Pris",
         button: "Hb4 Taglejlighed",
         newPrice: "36.495 DKK",
-        avatar: "",
+        avatar: "../assets/img/foto2.png",
         oldPrice: "41.995 KR",
       },
       {
         round: "Nyhed",
         button: "Multiform, mettes kokken",
         newPrice: "116.495 DKK",
-        avatar: "",
+        avatar: "../assets/img/foto3.png",
         oldPrice: "121.795 KR",
       },
     ];
@@ -52,8 +52,11 @@ let app = {
     document.getElementById("items").innerHTML = cards
       .map(
         (item) =>
-          `<div class='card' style='width:370px;height:543px'>
+          `<div class='card'>
         <div class='card-top'>
+         <img style="border-top-left-radius: 5px; border-top-right-radius: 5px;" src=${
+           item.avatar
+         } alt=''/>
           <div class='circle-description'>${item.round.toUpperCase()}</div>
           <button class='button-description'>${item.button.toUpperCase()} ></button>
         </div>
@@ -68,18 +71,20 @@ let app = {
       .join("");
 
     const peopleImages = [
-      { id: 0, img: "", alt: "img0" },
-      { id: 1, img: "", alt: "img1" },
-      { id: 2, img: "", alt: "img2" },
-      { id: 3, img: "", alt: "img3" },
-      { id: 4, img: "", alt: "img4" },
+      { id: 0, img: "../assets/img/poza5.png", alt: "img0" },
+      { id: 1, img: "../assets/img/poza3.png", alt: "img1" },
+      { id: 2, img: "../assets/img/poza1.png", alt: "img2" },
+      { id: 3, img: "../assets/img/poza4.png", alt: "img3" },
+      { id: 4, img: "../assets/img/poza2.png", alt: "img4" },
     ];
 
     document.getElementById("people").innerHTML = peopleImages
       .map(
-        (img) =>
+        (human) =>
           `
-        <div class='people-images'></div>
+        <div class='people-images'>
+          <img src=${human.img} alt="" />
+        </div>
       `
       )
       .join("");

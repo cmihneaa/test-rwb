@@ -6,6 +6,7 @@ header {
   text-align: center;
 
   h1 {
+    font-family: Raleway;
     font-weight: 700;
   }
 
@@ -16,15 +17,17 @@ header {
   }
 
   h5 {
+    font-family: Raleway;
     color: #010101;
     font-size: 18px;
     font-weight: 300;
   }
 
   .description {
+    font-family: Roboto;
     width: 35%;
     margin: auto;
-    font-size: 17px;
+    font-size: 19px;
     color: #666666;
   }
 }
@@ -69,11 +72,6 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 
-    .card-top {
-      height: 478px;
-      border-bottom: 1px solid #000;
-    }
-
     .card-body {
       .card-text {
         display: flex;
@@ -111,7 +109,8 @@ header {
 
 footer {
   width: 100%;
-  background-color: #000;
+  // background-color: #000;
+  background-image: url("../img/lemn.png");
   padding: 100px 0;
 
   h3 {
@@ -132,17 +131,16 @@ footer {
     margin-bottom: 20px;
 
     .people-images {
-      height: 60px;
-      width: 60px;
       margin-right: 10px;
-      background-color: #fff;
       color: #000;
       border-radius: 50%;
+      opacity: 0.6;
     }
 
     :nth-child(3) {
       height: 80px;
       width: 80px;
+      opacity: unset;
     }
   }
 
@@ -153,8 +151,18 @@ footer {
     margin: auto;
 
     .message {
+      font-family: Roboto;
       font-size: 20px;
       font-style: italic;
+    }
+
+    h3 {
+      font-family: Raleway;
+    }
+
+    .frontend {
+      margin-bottom: 0;
+      font-family: Raleway;
     }
   }
 }
